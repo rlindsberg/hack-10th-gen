@@ -1,0 +1,108 @@
+11:236  6:963  Found BIOS RSDP at f0010
+11:236  0:000  Printing ACPI tables from RSDP f0010 ...
+11:236  0:000   f0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:236  0:000    (Xsdt: 78db4728, Rsdt: 78db4394)
+11:236  0:000    78db4728: 'XSDT', 'A M I', Rev: 1, Len: 220
+11:236  0:000    78db4394: 'RSDT', 'A M I', Rev: 1, Len: 128
+11:236  0:000    Tables in Xsdt: 23
+11:236  0:000    0. 78dae000: 'FACP', 'A M I', Rev: 6, Len: 276
+11:236  0:000        (Dsdt: 78D64000, Facs: 79216000, XDsdt: 78d64000, XFacs: 0)
+11:236  0:000        78d64000: 'DSDT', 'A M I', Rev: 2, Len: 299837
+11:240  0:003        79216000: 'FACS', Ver: 2, Len: 64
+11:240  0:000    1. 78db3000: 'MCFG', 'A M I', Rev: 1, Len: 60
+11:240  0:000    2. 78db0000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8251
+11:240  0:000    3. 78daf000: 'SSDT', 'ItbmSci', Rev: 2, Len: 2642
+11:240  0:000    4. 78d63000: 'FIDT', 'A M I', Rev: 1, Len: 156
+11:240  0:000    5. 78d5e000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12492
+11:240  0:000    6. 78d59000: 'SSDT', 'PegSsdt', Rev: 2, Len: 16430
+11:240  0:000    7. 78d58000: 'HPET', 'A M I', Rev: 1, Len: 56
+11:240  0:000    8. 78d57000: 'APIC', 'A M I', Rev: 4, Len: 356
+11:240  0:000    9. 78d55000: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 5243
+11:240  0:000    10. 78d51000: 'SSDT', 'xh_cmsd4', Rev: 2, Len: 15000
+11:240  0:000    11. 78d4f000: 'NHLT', 'A M I', Rev: 0, Len: 6177
+11:240  0:000    12. 78d4d000: 'LPIT', 'A M I', Rev: 1, Len: 148
+11:240  0:000    13. 78d4c000: 'WSMT', 'A M I', Rev: 1, Len: 40
+11:240  0:000    14. 78d49000: 'SSDT', 'PtidDevc', Rev: 2, Len: 10016
+11:240  0:000    15. 78d46000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 9650
+11:240  0:000    16. 78d45000: 'DBGP', 'A M I', Rev: 1, Len: 52
+11:240  0:000    17. 78d44000: 'DBG2', 'A M I', Rev: 0, Len: 84
+11:240  0:000    18. 78d42000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7059
+11:240  0:000    19. 78c1e000: 'WPBT', 'A M I', Rev: 1, Len: 60
+11:240  0:000    20. 78c1d000: 'TPM2', 'A M I', Rev: 4, Len: 76
+11:240  0:000    21. 78d41000: 'BGRT', 'A M I', Rev: 1, Len: 56
+11:240  0:000    22. 78c1c000: 'FPDT', 'CML', Rev: 1, Len: 68
+11:240  0:000  Found UEFI Acpi 2.0 RSDP at 78db5014
+11:240  0:000  Saving ACPI tables from RSDP 78db5014 to ACPI\origin ...
+11:240  0:000   78db5014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+11:264  0:024    (Xsdt: 78db4728, Rsdt: 78db4394)
+11:264  0:000    78db4728: 'XSDT', 'A M I', Rev: 1, Len: 220 -> XSDT.aml
+11:286  0:022    78db4394: 'RSDT', 'A M I', Rev: 1, Len: 128 -> RSDT.aml
+11:307  0:021    Tables in Xsdt: 23
+11:307  0:000    0. 78dae000: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+11:329  0:021        (Dsdt: 78D64000, Facs: 79216000, XDsdt: 78d64000, XFacs: 0)
+11:329  0:000        78d64000: 'DSDT', 'A M I', Rev: 2, Len: 299837 -> DSDT.aml
+11:371  0:041        79216000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+11:390  0:019    1. 78db3000: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+11:411  0:020    2. 78db0000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8251 -> SSDT-0-CpuSsdt.aml (Found hidden SSDT 9 pcs)
+11:435  0:024        * 2025530008: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1739  53 53 44 54 CB 06 00 00 02 2A 50 6D 52 65 66 00 Internal length = 1739 -> SSDT-x0_0-Cpu0Ist.aml
+11:466  0:031        * 2025238936: 'SSDT', 'ApIst', Rev: 2, Len: 1912  53 53 44 54 78 07 00 00 02 6A 50 6D 52 65 66 00 Internal length = 1912 -> SSDT-x0_1-ApIst.aml
+11:489  0:022        * 2025226264: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1092  53 53 44 54 44 04 00 00 02 00 50 6D 52 65 66 00 Internal length = 1092 -> SSDT-x0_2-Cpu0Cst.aml
+11:518  0:028        * 2025227928: 'SSDT', 'ApCst', Rev: 2, Len: 970  53 53 44 54 CA 03 00 00 02 A6 50 6D 52 65 66 00 Internal length = 970 -> SSDT-x0_3-ApCst.aml
+11:544  0:026        * 2025241624: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 716  53 53 44 54 CC 02 00 00 02 7A 50 6D 52 65 66 00 Internal length = 716 -> SSDT-x0_4-Cpu0Hwp.aml
+11:566  0:021        * 2025222168: 'SSDT', 'ApHwp', Rev: 2, Len: 983  53 53 44 54 D7 03 00 00 02 28 50 6D 52 65 66 00 Internal length = 983 -> SSDT-x0_5-ApHwp.aml
+11:589  0:022        * 2025234456: 'SSDT', 'HwpLvt', Rev: 2, Len: 3050  53 53 44 54 EA 0B 00 00 02 68 50 6D 52 65 66 00 Internal length = 3050 -> SSDT-x0_6-HwpLvt.aml
+11:614  0:025        * 2025238552: 'SSDT', 'Cpu0Psd', Rev: 2, Len: 252  53 53 44 54 FC 00 00 00 02 E0 50 6D 52 65 66 00 Internal length = 252 -> SSDT-x0_7-Cpu0Psd.aml
+11:636  0:021        * 2025230360: 'SSDT', 'ApPsd', Rev: 2, Len: 3362  53 53 44 54 22 0D 00 00 02 C9 50 6D 52 65 66 00 Internal length = 3362 -> SSDT-x0_8-ApPsd.aml
+11:658  0:022  
+11:658  0:000    3. 78daf000: 'SSDT', 'ItbmSci', Rev: 2, Len: 2642 -> SSDT-1-ItbmSci.aml
+11:683  0:024    4. 78d63000: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+11:708  0:025    5. 78d5e000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12492 -> SSDT-2-SaSsdt.aml
+11:737  0:028    6. 78d59000: 'SSDT', 'PegSsdt', Rev: 2, Len: 16430 -> SSDT-3-PegSsdt.aml
+11:769  0:031    7. 78d58000: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+11:795  0:026    8. 78d57000: 'APIC', 'A M I', Rev: 4, Len: 356 -> APIC.aml
+11:818  0:022    9. 78d55000: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 5243 -> SSDT-4-Ther_Rvp.aml
+11:844  0:026    10. 78d51000: 'SSDT', 'xh_cmsd4', Rev: 2, Len: 15000 -> SSDT-5-xh_cmsd4.aml
+11:870  0:025    11. 78d4f000: 'NHLT', 'A M I', Rev: 0, Len: 6177 -> NHLT.aml
+11:899  0:028    12. 78d4d000: 'LPIT', 'A M I', Rev: 1, Len: 148 -> LPIT.aml
+11:923  0:023    13. 78d4c000: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+11:946  0:023    14. 78d49000: 'SSDT', 'PtidDevc', Rev: 2, Len: 10016 -> SSDT-6-PtidDevc.aml
+11:977  0:031    15. 78d46000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 9650 -> SSDT-7-TbtTypeC.aml
+12:003  0:025    16. 78d45000: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+12:027  0:024    17. 78d44000: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+12:049  0:021    18. 78d42000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7059 -> SSDT-8-UsbCTabl.aml
+12:076  0:026    19. 78c1e000: 'WPBT', 'A M I', Rev: 1, Len: 60 -> WPBT.aml
+12:102  0:026    20. 78c1d000: 'TPM2', 'A M I', Rev: 4, Len: 76 -> TPM2.aml
+12:127  0:024    21. 78d41000: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+12:153  0:025    22. 78c1c000: 'FPDT', 'CML', Rev: 1, Len: 68 -> FPDT.aml
+12:176  0:023  Found UEFI Acpi 1.0 RSDP at 78db5000
+12:176  0:000  Printing ACPI tables from RSDP 78db5000 ...
+12:176  0:000   78db5000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+12:176  0:000    (Rsdt: 78db4000)
+12:176  0:000    78db4000: 'RSDT', 'A M I', Rev: 1, Len: 128
+12:176  0:000    Tables in Rsdt: 23
+12:176  0:000    0. 78dae000: 'FACP', 'A M I', Rev: 6, Len: 276
+12:176  0:000        (Dsdt: 78D64000, Facs: 79216000, XDsdt: 78d64000, XFacs: 0)
+12:176  0:000        78d64000: 'DSDT', 'A M I', Rev: 2, Len: 299837
+12:180  0:003        79216000: 'FACS', Ver: 2, Len: 64
+12:180  0:000    1. 78db3000: 'MCFG', 'A M I', Rev: 1, Len: 60
+12:180  0:000    2. 78db0000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8251
+12:180  0:000    3. 78daf000: 'SSDT', 'ItbmSci', Rev: 2, Len: 2642
+12:180  0:000    4. 78d63000: 'FIDT', 'A M I', Rev: 1, Len: 156
+12:180  0:000    5. 78d5e000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12492
+12:180  0:000    6. 78d59000: 'SSDT', 'PegSsdt', Rev: 2, Len: 16430
+12:180  0:000    7. 78d58000: 'HPET', 'A M I', Rev: 1, Len: 56
+12:180  0:000    8. 78d57000: 'APIC', 'A M I', Rev: 4, Len: 356
+12:180  0:000    9. 78d55000: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 5243
+12:180  0:000    10. 78d51000: 'SSDT', 'xh_cmsd4', Rev: 2, Len: 15000
+12:180  0:000    11. 78d4f000: 'NHLT', 'A M I', Rev: 0, Len: 6177
+12:180  0:000    12. 78d4d000: 'LPIT', 'A M I', Rev: 1, Len: 148
+12:180  0:000    13. 78d4c000: 'WSMT', 'A M I', Rev: 1, Len: 40
+12:180  0:000    14. 78d49000: 'SSDT', 'PtidDevc', Rev: 2, Len: 10016
+12:180  0:000    15. 78d46000: 'SSDT', 'TbtTypeC', Rev: 2, Len: 9650
+12:180  0:000    16. 78d45000: 'DBGP', 'A M I', Rev: 1, Len: 52
+12:180  0:000    17. 78d44000: 'DBG2', 'A M I', Rev: 0, Len: 84
+12:180  0:000    18. 78d42000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 7059
+12:180  0:000    19. 78c1e000: 'WPBT', 'A M I', Rev: 1, Len: 60
+12:180  0:000    20. 78c1d000: 'TPM2', 'A M I', Rev: 4, Len: 76
+12:180  0:000    21. 78d41000: 'BGRT', 'A M I', Rev: 1, Len: 56
+12:180  0:000    22. 78c1c000: 'FPDT', 'CML', Rev: 1, Len: 68
